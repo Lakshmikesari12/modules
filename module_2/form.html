@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Speaking Test Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>IELTS Speaking Test Registration</h2>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required maxlength="50">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required maxlength="10" pattern="[0-9]{10}">
+
+            <label for="testDate">Test Date:</label>
+            <input type="date" id="testDate" name="testDate" required>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Register</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="form_validation.js"></script>
+</body>
+</html>
